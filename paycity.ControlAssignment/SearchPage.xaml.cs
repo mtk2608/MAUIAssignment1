@@ -2,12 +2,12 @@ using System.Reflection;
 
 namespace paycity.ControlAssignment;
 
-public partial class HomePage : ContentPage
+public partial class SearchPage : ContentPage
 {
-	public HomePage()
+	public SearchPage()
 	{
 		InitializeComponent();
 	}
 
-    
+   
 }

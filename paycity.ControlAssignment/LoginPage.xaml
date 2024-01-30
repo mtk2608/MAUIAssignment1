@@ -46,7 +46,7 @@
             CornerRadius="50" HeightRequest="70"
             WidthRequest="250" FontSize="20"
             FontAttributes="Bold"
-            Clicked="HomePageClicked"/>
+            />
                 
                 <Button Text="REGISTER"  HorizontalOptions="FillAndExpand"
             BackgroundColor="Orange" TextColor="White"

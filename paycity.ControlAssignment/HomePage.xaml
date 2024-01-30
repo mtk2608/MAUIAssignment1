@@ -6,32 +6,27 @@
 
 
     <StackLayout>
+        <Label Text="Profile Settings"
+               TextColor="Orange"
+               HorizontalTextAlignment="Center"
+               Margin="0,100,0,0"
+               FontAttributes="Bold"
+               FontSize="40"/>
 
-        <Grid HorizontalOptions="Center">
+        <StackLayout Orientation="Horizontal">
+            <ImageButton Source="dotnet_bot.png"
+                         HeightRequest="40"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"/>
 
-            <Button Text="Traffic Fines"
-                FontSize="20"
-                BorderWidth="1" 
-                StyleId="LabelDemoPage"
-                Clicked="OnButtonClicked" />
+            <Label x:Name="label"
+               Text="0 ImageButton clicks"
+               FontSize="20"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+        </StackLayout>
 
-            <Button Text="License Disc Renewal"
-                FontSize="20"
-                BorderWidth="1" 
-                StyleId="ImageDemoPage"
-                Clicked="OnButtonClicked" />
 
-            <Button Text="Municipal Bill Payments"
-                FontSize="20"
-                BorderWidth="1" 
-                StyleId="BoxViewDemoPage"
-                Clicked="OnButtonClicked" />
 
-            <Button Text="Prepaid Utilities"
-                FontSize="20"
-                BorderWidth="1" 
-                StyleId="WebViewDemoPage"
-                Clicked="OnButtonClicked" />
-        </Grid>
     </StackLayout>
 </ContentPage>
