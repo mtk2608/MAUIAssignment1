@@ -5,7 +5,7 @@
              Title="HomePage">
 
 
-    <StackLayout>
+    <VerticalStackLayout>
         <Label Text="Profile Settings"
                TextColor="Orange"
                HorizontalTextAlignment="Center"
@@ -13,20 +13,66 @@
                FontAttributes="Bold"
                FontSize="40"/>
 
-        <StackLayout Orientation="Horizontal">
-            <ImageButton Source="dotnet_bot.png"
-                         HeightRequest="40"
-                    HorizontalOptions="Center"
-                    VerticalOptions="Center"/>
 
-            <Label x:Name="label"
-               Text="0 ImageButton clicks"
-               FontSize="20"
-               HorizontalOptions="Center"
-               VerticalOptions="Center" />
+        <Frame WidthRequest="700" HeightRequest="180" Margin="0,100,0,0"  BackgroundColor="White" CornerRadius="15" HasShadow="True">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" Spacing="-150">
+                <ImageButton Source="fines.png"
+                         HeightRequest="180"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center"/>
+
+                <Label x:Name="TrafficFines"
+                   Text="Traffic Fines"
+                   TextColor="Black"
+                   FontSize="20"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
+            </StackLayout>
+        </Frame>
+
+        <Frame WidthRequest="700" HeightRequest="180" Margin="0,100,0,0"  BackgroundColor="White" CornerRadius="15" HasShadow="True">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" Spacing="-150">
+                <ImageButton Source="disc.png"
+                 HeightRequest="180"
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center"/>
+
+                <Label x:Name="LicenseDisc"
+          Text="License Disc Renewal"
+          TextColor="Black"
+          FontSize="20"
+          HorizontalOptions="Center"
+          VerticalOptions="Center" />
         </StackLayout>
+        </Frame>
+
+        <Frame>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" Spacing="-150">
+                <ImageButton Source="billspayments.png"
+                 HeightRequest="180"
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center"/>
+
+                <Label x:Name="MunicipalBills"
+           Text="Municipal Bills Payments"
+           TextColor="Black"
+           FontSize="20"
+           HorizontalOptions="Center"
+           VerticalOptions="Center" />
+            </StackLayout>
+        </Frame>
 
 
 
-    </StackLayout>
+    </VerticalStackLayout>
+                
+                
+                
+
+            
+        
+        
+
+
+
 </ContentPage>

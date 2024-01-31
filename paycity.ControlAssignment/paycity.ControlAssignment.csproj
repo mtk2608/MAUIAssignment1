@@ -60,7 +60,20 @@
 	<ItemGroup>
 	  <None Remove="Resources\AppIcon\appiconfg.svg" />
 	  <None Remove="Resources\AppIcon\paycityicon.svg" />
+	  <None Remove="Resources\Images\billpayments.png" />
+	  <None Remove="Resources\Images\disc.png" />
+	  <None Remove="Resources\Images\fines.png" />
+	  <None Remove="Resources\Images\hamburger.png" />
+	  <None Remove="Resources\Images\home.png" />
+	  <None Remove="Resources\Images\notification.png" />
+	  <None Remove="Resources\Images\notifications.png" />
 	  <None Remove="Resources\Images\paycitylogo.png" />
+	  <None Remove="Resources\Images\paymenthistory.png" />
+	  <None Remove="Resources\Images\prepaid.png" />
+	  <None Remove="Resources\Images\profile.png" />
+	  <None Remove="Resources\Images\search.png" />
+	  <None Remove="Resources\Images\services.png" />
+	  <None Remove="Resources\Images\tab.png" />
 	</ItemGroup>
 
 	<ItemGroup>

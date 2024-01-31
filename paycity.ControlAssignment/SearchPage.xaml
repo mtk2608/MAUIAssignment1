@@ -40,7 +40,7 @@
                    CornerRadius="50"
                    BackgroundColor="Transparent"
                    VerticalOptions="Start"
-                  >
+                   />
 
                 <!-- Entry inside the shape -->
                 <Entry Placeholder="Enter Notice Number"
@@ -51,9 +51,10 @@
                       TextColor="Grey"
                       />
 
-            </Frame>
 
-            <!-- Button for demonstration purposes -->
+
+
+                <!-- Button for demonstration purposes -->
             <Button Grid.Row="2"
                     BorderWidth="1"
                     BorderColor="Grey"
