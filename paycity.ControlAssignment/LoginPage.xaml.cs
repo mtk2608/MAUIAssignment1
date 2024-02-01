@@ -10,7 +10,7 @@ namespace paycity.ControlAssignment
         {
             InitializeComponent();
 
-            Navigation.PushAsync(new SearchPage());
+            Navigation.PushAsync(new HomePage());
             
         }
 

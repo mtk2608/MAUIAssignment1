@@ -4,16 +4,57 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:paycity.ControlAssignment"
-    xmlns:controls="clr-namespace:paycity.ControlAssignment.NewFolder"
     Shell.FlyoutBehavior="Flyout"
     FlyoutHeaderBehavior="CollapseOnScroll"
     Title="paycity.ControlAssignment">
 
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent Title="Home" Icon="home.png"
+                      Style="{StaticResource BaseStyle}"
+                      ContentTemplate="{DataTemplate local:HomePage}"
+                      Route="HomePage"
+                      />
+
+        <ShellContent Title="Profile"
+                      Icon="tab.png"
+                      Style="{StaticResource BaseStyle}"
+                      ContentTemplate="{DataTemplate local:ProfilePage}"
+                      Route="ProfilePage"/>
+
+        <ShellContent Title="Search"
+                      Icon="search.png"
+                      Style="{StaticResource BaseStyle}"
+                      ContentTemplate="{DataTemplate local:SearchPage}"
+                      Route="SearchPage"/>
+        
+        
+
+    </FlyoutItem>
+
+    <ShellContent Title="FAQ's"
+                      Icon="bookicon.png"
+                      ContentTemplate="{DataTemplate local:ComingSoon}"
+                      Route="ComingSoon"/>
+
+    <ShellContent Title="Contact Us"
+                      Icon="bookicon.png"
+                      ContentTemplate="{DataTemplate local:ComingSoon}"
+                      Route="ComingSoon"/>
+
+    <ShellContent Title="About Us"
+                      Icon="bookicon.png"
+                      ContentTemplate="{DataTemplate local:ComingSoon}"
+                      Route="ComingSoon"/>
+
+
+
     <Shell.FlyoutHeader>
-        <controls:FlyoutHeader BackgroundImageSource="paycity.png"
-                               HeightRequest="50"/>
+        <Image Source="paycitylogo.png"
+               HorizontalOptions="Start"
+               VerticalOptions="StartAndExpand"
+               HeightRequest="100"
+               WidthRequest="100"/>
     </Shell.FlyoutHeader>
-
 
     <Shell.ItemTemplate>
         <DataTemplate>
@@ -48,27 +89,6 @@ Value="#95FFFFFF" />
 BasedOn="{StaticResource BaseStyle}" />
     </Shell.Resources>
 
-
-    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
-        <ShellContent Title="Home" Icon="home.png"
-                      Style="{StaticResource BaseStyle}"
-                      ContentTemplate="{DataTemplate local:HomePage}"
-                      Route="HomePage"
-                      />
-
-        <ShellContent Title="Profile"
-                      Icon="tab.png"
-                      Style="{StaticResource BaseStyle}"
-                      ContentTemplate="{DataTemplate local:ProfilePage}"
-                      Route="ProfilePage"/>
-
-        <ShellContent Title="Search"
-                      Icon="search.png"
-                      Style="{StaticResource BaseStyle}"
-                      ContentTemplate="{DataTemplate local:SearchPage}"
-                      Route="SearchPage"/>
-        
-    </FlyoutItem>
 
 
 </Shell>

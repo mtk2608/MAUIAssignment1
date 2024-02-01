@@ -2,7 +2,6 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="paycity.ControlAssignment.SearchPage"
-             Title="SearchPage"
              BackgroundColor="{DynamicResource PageBackgroundColor}">
 
     
@@ -28,28 +27,27 @@
                     TextColor="Orange"
                     FontSize="Title"
                     HorizontalTextAlignment="Center" 
-                    Margin="130,300,130,0"/>
+                    Margin="130,400,130,0"/>
                   
 
         </StackLayout>
 
-        <StackLayout Grid.Row="0" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" Margin="300">
+        <StackLayout Grid.Row="0" Orientation="Vertical" HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand" Margin="320">
             <!-- Custom shape (Ellipse) -->
             <Frame WidthRequest="550"
                    HeightRequest="90"
                    CornerRadius="50"
                    BackgroundColor="Transparent"
-                   VerticalOptions="Start"
-                   />
+                   VerticalOptions="Start"/>
 
                 <!-- Entry inside the shape -->
                 <Entry Placeholder="Enter Notice Number"
                       HorizontalTextAlignment="Center"
-                      VerticalTextAlignment="Center"
+                       HorizontalOptions="CenterAndExpand"
                       FontSize="25"
                       BackgroundColor="Transparent"
                       TextColor="Grey"
-                      />
+                       Margin="-100,-80,0,-100"/>
 
 
 
@@ -69,7 +67,8 @@
                     WidthRequest="600"
                     HeightRequest="90"
                     Margin="300"
-                    />
+                    Clicked="Button_Clicked"/>
+            
         </StackLayout>
            
         </Grid>
