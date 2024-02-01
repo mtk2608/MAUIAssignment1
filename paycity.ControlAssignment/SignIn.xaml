@@ -28,7 +28,7 @@
                    TextColor="Black"
                    FontSize="20"
                    Margin="10,50,0,30"/>
-            <Editor VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="0,-20,0,0"/>
+            <Entry VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="0,-20,0,0" IsPassword="True"/>
             
         </StackLayout>
 

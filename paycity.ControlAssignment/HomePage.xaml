@@ -2,8 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="paycity.ControlAssignment.HomePage"
-             xmlns:buttons="clr-namespace:Syncfusion.Maui.Buttons;assembly=Syncfusion.Maui.Buttons"
-             Title="HomePage">
+             xmlns:buttons="clr-namespace:Syncfusion.Maui.Buttons;assembly=Syncfusion.Maui.Buttons">
 
 
     <VerticalStackLayout Margin="0,100,0,0">
@@ -20,7 +19,9 @@
                 Stroke="LightGray"
                 Background="White"
                 ImageAlignment="Left"
-                HorizontalTextAlignment="Start"/>
+                HorizontalTextAlignment="Start"
+                CornerRadius="20"
+                          Margin="0,0,0,25"/>
         
         <buttons:SfButton x:Name="LicenseDiskRenewal" 
                 Text="License Disk Renewal"
@@ -35,7 +36,9 @@
                 Stroke="LightGray"
                 Background="White"
                 ImageAlignment="Left"
-                HorizontalTextAlignment="Start"/>
+                HorizontalTextAlignment="Start"
+                CornerRadius="20"
+                          Margin="0,0,0,25"/>
         
         <buttons:SfButton x:Name="MunicipalBills" 
                 Text="Municipal Bills Payments"
@@ -50,7 +53,9 @@
                 Stroke="LightGray"
                 Background="White"
                 ImageAlignment="Left"
-                HorizontalTextAlignment="Start"/>
+                HorizontalTextAlignment="Start"
+                          CornerRadius="20"
+                          Margin="0,0,0,25"/>
         
         <buttons:SfButton x:Name="PrepaidUtilities" 
                 Text="Prepaid Utilities"
@@ -65,7 +70,8 @@
                 Stroke="LightGray"
                 Background="White"
                 ImageAlignment="Left"
-                HorizontalTextAlignment="Start"/>
+                HorizontalTextAlignment="Start"
+                          CornerRadius="20"/>
 
 
     </VerticalStackLayout>

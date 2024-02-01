@@ -4,15 +4,71 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:paycity.ControlAssignment"
-    Shell.FlyoutBehavior="Disabled"
+    xmlns:controls="clr-namespace:paycity.ControlAssignment.NewFolder"
+    Shell.FlyoutBehavior="Flyout"
+    FlyoutHeaderBehavior="CollapseOnScroll"
     Title="paycity.ControlAssignment">
 
-    <ShellContent
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <Shell.FlyoutHeader>
+        <controls:FlyoutHeader BackgroundImageSource="paycity.png"
+                               HeightRequest="50"/>
+    </Shell.FlyoutHeader>
+
 
-    
+    <Shell.ItemTemplate>
+        <DataTemplate>
+            <Grid ColumnDefinitions="0.5*,0.9*" HeightRequest="80" Margin="0,30,0,0">
+                <Image Source="{Binding FlyoutIcon}"
 
+HeightRequest="100" />
+                <Label Grid.Column="1"
+Text="{Binding Title}"
+FontSize="20"
+FontAttributes="None"
+VerticalTextAlignment="Center" />
+            </Grid>
+        </DataTemplate>
+    </Shell.ItemTemplate>
+
+    <Shell.Resources>
+        <Style x:Key="BaseStyle"
+TargetType="Element">
+            <Setter Property="Shell.BackgroundColor"
+Value="Black" />
+            <Setter Property="Shell.ForegroundColor"
+Value="White" />
+            <Setter Property="Shell.TitleColor"
+Value="White" />
+            <Setter Property="Shell.DisabledColor"
+Value="#B4FFFFFF" />
+            <Setter Property="Shell.UnselectedColor"
+Value="#95FFFFFF" />
+        </Style>
+        <Style TargetType="ShellItem"
+BasedOn="{StaticResource BaseStyle}" />
+    </Shell.Resources>
+
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent Title="Home" Icon="home.png"
+                      Style="{StaticResource BaseStyle}"
+                      ContentTemplate="{DataTemplate local:HomePage}"
+                      Route="HomePage"
+                      />
+
+        <ShellContent Title="Profile"
+                      Icon="tab.png"
+                      Style="{StaticResource BaseStyle}"
+                      ContentTemplate="{DataTemplate local:ProfilePage}"
+                      Route="ProfilePage"/>
+
+        <ShellContent Title="Search"
+                      Icon="search.png"
+                      Style="{StaticResource BaseStyle}"
+                      ContentTemplate="{DataTemplate local:SearchPage}"
+                      Route="SearchPage"/>
+        
+    </FlyoutItem>
 
 
 </Shell>
