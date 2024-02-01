@@ -9,14 +9,19 @@ namespace paycity.ControlAssignment
         public MainPage()
         {
             InitializeComponent();
+            
+        }
 
-            Navigation.PushAsync(new HomePage());
-
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new SignIn());
         }
 
 
-       
-
+        private void RegisterClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new SignUp());
+        }
     }
 
 }

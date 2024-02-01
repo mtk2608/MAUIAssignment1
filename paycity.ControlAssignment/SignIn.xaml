@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+    
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="paycity.ControlAssignment.SignIn"
+             xmlns:syncfusion="clr-namespace:Syncfusion.Maui.Buttons;assembly=Syncfusion.Maui.Buttons"
+             Title="SignIn">
+    <VerticalStackLayout>
+        <Label 
+            Text="LOGIN"
+            FontAttributes="Bold"
+            FontSize="40"
+            TextColor="Orange"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            Margin="0,0,0,40"/>
+
+        <StackLayout>
+            <Label Text="Username:"
+                   FontAttributes="Italic"
+                   TextColor="Black"
+                   FontSize="20"
+                   Margin="10,50,0,30"/>
+            <Editor VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="0,-20,0,0"/>
+            <Label Text="Password:"
+                   FontAttributes="Italic"
+                   TextColor="Black"
+                   FontSize="20"
+                   Margin="10,50,0,30"/>
+            <Editor VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="0,-20,0,0"/>
+            
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" Spacing="10" VerticalOptions="Center" HorizontalOptions="EndAndExpand" Margin="40">
+            <Label Text="Remember Me "
+                   FontSize="20"
+                   FontAttributes="Italic"
+                   Margin="10" />
+
+
+            <syncfusion:SfSwitch IsOn="False" AllowIndeterminateState="false">
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup  x:Name="CommonStates">
+                        <VisualState x:Name="On">
+                            <VisualState.Setters>
+                                <Setter Property="SwitchSettings">
+                                    <Setter.Value>
+                                        <syncfusion:SwitchSettings
+                                 ThumbBackground="White"
+                                 ThumbStroke="White"
+                                 TrackBackground="Orange"
+                                 TrackStroke="Orange"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </VisualState.Setters>
+                        </VisualState>
+                        <VisualState x:Name="Off">
+                            <VisualState.Setters>
+                                <Setter Property="SwitchSettings">
+                                    <Setter.Value>
+                                        <syncfusion:SwitchSettings
+                                ThumbBackground="Orange"
+                                ThumbStroke="Orange"
+                                TrackBackground="White"
+                                TrackStroke="Orange"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateManager.VisualStateGroups>
+            </syncfusion:SfSwitch>
+ 
+        </StackLayout>
+
+        <Button Text="LOGIN"
+                HorizontalOptions="FillAndExpand"
+                Margin="170"
+                BackgroundColor="Orange" TextColor="White"
+                BorderWidth="1" 
+                CornerRadius="50" HeightRequest="90"
+                WidthRequest="600" FontSize="20"
+                FontAttributes="Bold"
+                Clicked="NavigateToHomePage"/>
+
+        <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="Center" Margin="-100">
+
+            <Label Text=" Don't have an account? "
+                   FontAttributes="Italic"
+                   FontSize="18"
+                   Margin="0,-9,0,0"/>
+
+            <StackLayout Spacing="-5" Margin="-10">
+                <Label Text="Register"
+                   FontSize="18"
+                   TextColor="Orange"
+                   HorizontalOptions="Center" />
+
+                <Line X1="80"
+              Y1="0"
+              X2="0"
+              Y2="0"
+              Stroke="Orange"
+              HorizontalOptions="EndAndExpand"
+                   />
+            </StackLayout>
+
+        </StackLayout>
+
+        <StackLayout Orientation="Vertical" Spacing="20" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Margin="150">
+
+            <Label Text=" Don't have an account? "
+                   FontAttributes="Italic"
+                   FontSize="18"
+                   Margin="0,-7,0,0"/>
+
+            <StackLayout Spacing="-5" Margin="-10">
+                <Label Text="Reset Password"
+                   FontSize="18"
+                   TextColor="Orange"
+                   HorizontalOptions="Center" />
+
+                <Line X1="200"
+              Y1="0"
+              X2="0"
+              Y2="0"
+              Stroke="Orange"
+              HorizontalOptions="CenterAndExpand"
+                />
+            </StackLayout>
+
+            <Label Text="Version 5.1.2"
+                   HorizontalTextAlignment="Center"
+                   Margin="10"/>
+
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>

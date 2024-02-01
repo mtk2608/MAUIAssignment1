@@ -13,27 +13,27 @@
         <!-- Your existing content -->
         <StackLayout>
             <Image Source="paycitylogo.png"
-           HeightRequest="185"
-           Aspect="AspectFit"
-           BackgroundColor="White"
-           Margin="150"/>
+                   HeightRequest="185"
+                   Aspect="AspectFit"
+                   BackgroundColor="White"
+                   Margin="150"/>
 
             <Label Text="Welcome to payCity!"
-           Style="{StaticResource Headline}"
-           FontSize="40"
-           TextColor="Orange"
+                   Style="{StaticResource Headline}"
+                   FontSize="40"
+                   TextColor="Orange"
            />
 
             <Label Text="Please Login or Register."
-           FontSize="25"
-           Style="{StaticResource SubHeadline}"/>
+                   FontSize="25"
+                   Style="{StaticResource SubHeadline}"/>
 
             <Label Text="Version 5.1.2"
-           FontSize="15"
-           VerticalOptions="End"
-           HorizontalOptions="Center"
-           Margin="350"
-           FontAttributes="Bold"/>
+                   FontSize="15"
+                   VerticalOptions="End"
+                   HorizontalOptions="Center"
+                   Margin="350"
+                   FontAttributes="Bold"/>
         </StackLayout>
 
         <!-- First set of buttons in the second row -->
@@ -41,19 +41,21 @@
             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" Spacing="600" >
                 
                 <Button Text="LOGIN"  HorizontalOptions="FillAndExpand" 
-            BackgroundColor="White" TextColor="Black" 
-            BorderColor="Black" BorderWidth="1" 
-            CornerRadius="50" HeightRequest="70"
-            WidthRequest="250" FontSize="20"
-            FontAttributes="Bold"
-            />
-                
-                <Button Text="REGISTER"  HorizontalOptions="FillAndExpand"
-            BackgroundColor="Orange" TextColor="White"
-            BorderWidth="1" 
-            CornerRadius="50" HeightRequest="70"
-            WidthRequest="250" FontSize="20"
-            FontAttributes="Bold"/>
+                        BackgroundColor="White" TextColor="Black" 
+                        BorderColor="Black" BorderWidth="1" 
+                        CornerRadius="50" HeightRequest="70"
+                        WidthRequest="250" FontSize="20"
+                        FontAttributes="Bold"
+                        Clicked="Button_Clicked"/>
+
+                <Button Text="REGISTER"
+                        HorizontalOptions="FillAndExpand"
+                        BackgroundColor="Orange" TextColor="White"
+                        BorderWidth="1" 
+                        CornerRadius="50" HeightRequest="70"
+                        WidthRequest="250" FontSize="20"
+                        FontAttributes="Bold"
+                        Clicked="RegisterClicked"/>
                 
             </StackLayout>
 
