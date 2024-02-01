@@ -9,6 +9,8 @@ namespace paycity.ControlAssignment
         public MainPage()
         {
             InitializeComponent();
+
+            Navigation.PushAsync(new HomePage());
             
         }
 

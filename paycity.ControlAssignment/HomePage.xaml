@@ -2,82 +2,70 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="paycity.ControlAssignment.HomePage"
+             xmlns:buttons="clr-namespace:Syncfusion.Maui.Buttons;assembly=Syncfusion.Maui.Buttons"
              Title="HomePage">
 
 
-    <VerticalStackLayout>
-        <Label Text="Profile Settings"
-               TextColor="Orange"
-               HorizontalTextAlignment="Center"
-               Margin="0,100,0,0"
-               FontAttributes="Bold"
-               FontSize="40"/>
-
-
-        <Frame WidthRequest="700" HeightRequest="170" Margin="0,80,0,0"  BackgroundColor="White" CornerRadius="15" HasShadow="True">
-            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" Spacing="-150">
-                <ImageButton Source="fines.png"
-                             HeightRequest="180"
-                             HorizontalOptions="Center"
-                             VerticalOptions="Center"/>
-
-                <Label x:Name="TrafficFines"
-                       Text="Traffic Fines"
-                       TextColor="Black"
-                       FontSize="20"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center" />
-            </StackLayout>
-        </Frame>
-
-        <Frame WidthRequest="700" HeightRequest="170" BackgroundColor="White" CornerRadius="15" HasShadow="True" Margin="0,40,0,20">
-            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" Spacing="-150">
-                <ImageButton Source="disc.png"
-                             HeightRequest="180"
-                             HorizontalOptions="Center"
-                             VerticalOptions="Center"/>
-
-                <Label x:Name="LicenseDisc"
-                       Text="License Disc Renewal"
-                       TextColor="Black"
-                       FontSize="20"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center" />
-        </StackLayout>
-        </Frame>
-
-        <Frame WidthRequest="700" HeightRequest="170" BackgroundColor="White" CornerRadius="15" HasShadow="True" Margin="20">
-            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" Spacing="-150">
-                <ImageButton Source="billpayments.png"
-                             HeightRequest="180"
-                             HorizontalOptions="Center"
-                             VerticalOptions="Center"/>
-
-                <Label x:Name="MunicipalBills"
-                       Text="Municipal Bills Payments"
-                       TextColor="Black"
-                       FontSize="20"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center" />
-            </StackLayout>
-        </Frame>
-
-        <Frame WidthRequest="700" HeightRequest="170"  BackgroundColor="White" CornerRadius="15" HasShadow="True" Margin="20">
-            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" Spacing="-150">
-                <ImageButton Source="prepaid.png"
-                             HeightRequest="180"
-                             HorizontalOptions="Center"
-                             VerticalOptions="Center"/>
-
-                <Label x:Name="Utilities"
-                       Text="Prepaid Utilities"
-                       TextColor="Black"
-                       FontSize="20"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center" />
-            </StackLayout>
-        </Frame>
-
+    <VerticalStackLayout Margin="0,100,0,0">
+        <buttons:SfButton x:Name="TrafficFines" 
+                Text="Traffic Fines"
+                TextColor="Black"
+                FontSize="25"
+                HorizontalOptions="Center"
+                ImageSource="fines.png"
+                ShowIcon="True" 
+                ImageSize="210"
+                HeightRequest="180"
+                WidthRequest="650"          
+                Stroke="LightGray"
+                Background="White"
+                ImageAlignment="Left"
+                HorizontalTextAlignment="Start"/>
+        
+        <buttons:SfButton x:Name="LicenseDiskRenewal" 
+                Text="License Disk Renewal"
+                TextColor="Black"
+                FontSize="25"
+                HorizontalOptions="Center"
+                ImageSource="disc.png"
+                ShowIcon="True" 
+                ImageSize="210"
+                HeightRequest="180"
+                WidthRequest="650"          
+                Stroke="LightGray"
+                Background="White"
+                ImageAlignment="Left"
+                HorizontalTextAlignment="Start"/>
+        
+        <buttons:SfButton x:Name="MunicipalBills" 
+                Text="Municipal Bills Payments"
+                TextColor="Black"
+                FontSize="25"
+                HorizontalOptions="Center"
+                ImageSource="billpayments.png"
+                ShowIcon="True" 
+                ImageSize="210"
+                HeightRequest="180"
+                WidthRequest="650"          
+                Stroke="LightGray"
+                Background="White"
+                ImageAlignment="Left"
+                HorizontalTextAlignment="Start"/>
+        
+        <buttons:SfButton x:Name="PrepaidUtilities" 
+                Text="Prepaid Utilities"
+                TextColor="Black"
+                FontSize="25"
+                HorizontalOptions="Center"
+                ImageSource="prepaid.png"
+                ShowIcon="True" 
+                ImageSize="210"
+                HeightRequest="180"
+                WidthRequest="650"          
+                Stroke="LightGray"
+                Background="White"
+                ImageAlignment="Left"
+                HorizontalTextAlignment="Start"/>
 
 
     </VerticalStackLayout>

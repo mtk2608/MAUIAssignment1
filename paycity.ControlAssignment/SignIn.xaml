@@ -82,7 +82,7 @@
                 CornerRadius="50" HeightRequest="90"
                 WidthRequest="600" FontSize="20"
                 FontAttributes="Bold"
-                Clicked="NavigateToHomePage"/>
+/>
 
         <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="Center" Margin="-100">
 
