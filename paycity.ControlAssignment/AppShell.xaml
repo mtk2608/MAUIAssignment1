@@ -6,10 +6,15 @@
     xmlns:local="clr-namespace:paycity.ControlAssignment"
     Shell.FlyoutBehavior="Flyout"
     FlyoutHeaderBehavior="CollapseOnScroll"
-    Title="paycity.ControlAssignment">
+    Title="paycity.ControlAssignment"
+    >
 
-    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
-        <ShellContent Title="Home" Icon="home.png"
+    <Tab>
+        
+    </Tab>
+
+    <FlyoutItem FlyoutDisplayOptions="AsSingleItem">
+        <ShellContent Title="Home Page" Icon="home.png"
                       Style="{StaticResource BaseStyle}"
                       ContentTemplate="{DataTemplate local:HomePage}"
                       Route="HomePage"
@@ -18,7 +23,7 @@
         <ShellContent Title="Profile"
                       Icon="tab.png"
                       Style="{StaticResource BaseStyle}"
-                      ContentTemplate="{DataTemplate local:ProfilePage}"
+                      ContentTemplate="{DataTemplate local:SignIn}"
                       Route="ProfilePage"/>
 
         <ShellContent Title="Search"
@@ -26,10 +31,27 @@
                       Style="{StaticResource BaseStyle}"
                       ContentTemplate="{DataTemplate local:SearchPage}"
                       Route="SearchPage"/>
-        
-        
 
     </FlyoutItem>
+    <ShellContent Title="My services" Icon="services.png"
+                      Style="{StaticResource BaseStyle}"
+                      ContentTemplate="{DataTemplate local:HomePage}"
+                      Route="HomePage"
+                      />
+
+    <ShellContent Title="My Profile"
+                      Icon="tab2.png"
+                      Style="{StaticResource BaseStyle}"
+                      ContentTemplate="{DataTemplate local:SignIn}"
+                      Route="ProfilePage"/>
+
+    <ShellContent Title="Quick Search"
+                      Icon="searchmenu.png"
+                      Style="{StaticResource BaseStyle}"
+                      ContentTemplate="{DataTemplate local:SearchPage}"
+                      Route="SearchPage"/>
+
+
 
     <ShellContent Title="FAQ's"
                       Icon="bookicon.png"

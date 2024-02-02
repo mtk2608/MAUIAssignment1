@@ -4,7 +4,7 @@ namespace paycity.ControlAssignment
 {
     public partial class AppShell : Shell
     {
-        public AppShell()
+        public AppShell(HomePage homePage)
         {
             InitializeComponent();
 

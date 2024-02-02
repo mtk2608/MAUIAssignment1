@@ -1,4 +1,5 @@
 using System.Reflection;
+using System.Windows.Input;
 
 namespace paycity.ControlAssignment;
 
@@ -9,7 +10,9 @@ public partial class SearchPage : ContentPage
 		InitializeComponent();
 	}
 
-    private void Button_Clicked(object sender, EventArgs e)
+
+
+private void Button_Clicked(object sender, EventArgs e)
     {
         Navigation.PushAsync(new ComingSoon());
     }

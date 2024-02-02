@@ -4,9 +4,41 @@
              x:Class="paycity.ControlAssignment.ComingSoon"
              Title="ComingSoon">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <Image Source="paycitylogo.png"
+               HeightRequest="400"
+               WidthRequest="500"/>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+
+            <Image Source="construction.png"
+                   HeightRequest="70"
+                   WidthRequest="70"/>
+            <Label Text="Under Construction"
+               HorizontalTextAlignment="Center"
+               TextColor="Orange"
+               FontSize="40"
+               FontAttributes="Bold"/>
+            
+        </StackLayout>
+
+        <Label Text="Please use the link below for any problems or for access to the website"
+               FontSize="20"
+               Margin="0,50,0,0"/>
+        <Label>
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Click " FontSize="20"/>
+                    <Span Text="here for link" FontSize="20"
+                  TextColor="Orange"
+                  TextDecorations="Underline">
+                        <Span.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding TapCommand}"
+                                          CommandParameter="https://www.paycity.co.za/" />
+                        </Span.GestureRecognizers>
+                    </Span>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
     </VerticalStackLayout>
 </ContentPage>

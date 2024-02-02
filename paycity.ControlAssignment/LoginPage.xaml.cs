@@ -1,29 +1,18 @@
-﻿using Microsoft.Maui.Controls;
+﻿using System.Windows.Input;
 
 namespace paycity.ControlAssignment
 {
     public partial class MainPage : ContentPage
     {
-        
+        public ICommand TapCommand => new Command
+    <string>(async (url) => await Launcher.OpenAsync(url));
 
         public MainPage()
         {
             InitializeComponent();
-
-            Navigation.PushAsync(new HomePage());
-            
+            BindingContext = this;
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new SignIn());
-        }
-
-
-        private void RegisterClicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new SignUp());
-        }
     }
 
 }

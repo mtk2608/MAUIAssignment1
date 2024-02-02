@@ -21,7 +21,7 @@
                    FontAttributes="Italic"
                    TextColor="Black"
                    FontSize="20"
-                   Margin="10,50,0,30"/>
+                   Margin="11,50,0,30"/>
             <Editor VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="0,-20,0,0"/>
             <Label Text="Password:"
                    FontAttributes="Italic"
@@ -29,7 +29,18 @@
                    FontSize="20"
                    Margin="10,50,0,30"/>
             <Entry VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="0,-20,0,0" IsPassword="True"/>
-            
+
+            <Line
+                  X1="795"
+              Y1="0"
+              X2="0"
+              Y2="0"
+              Stroke="DarkSlateBlue"
+                  StrokeThickness="2"
+                  StrokeDashOffset="10"
+              HorizontalOptions="StartAndExpand"
+                   />
+
         </StackLayout>
 
         <StackLayout Orientation="Horizontal" Spacing="10" VerticalOptions="Center" HorizontalOptions="EndAndExpand" Margin="40">
@@ -82,7 +93,7 @@
                 CornerRadius="50" HeightRequest="90"
                 WidthRequest="600" FontSize="20"
                 FontAttributes="Bold"
-/>
+                Clicked="Button_Clicked" />
 
         <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="Center" Margin="-100">
 

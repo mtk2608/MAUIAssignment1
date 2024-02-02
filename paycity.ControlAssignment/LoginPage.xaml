@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="paycity.ControlAssignment.MainPage">
+             x:Class="paycity.ControlAssignment.MainPage"
+                xmlns:buttons="clr-namespace:Syncfusion.Maui.Buttons;assembly=Syncfusion.Maui.Buttons">
 
     <Grid>
         <!-- Main content in the first row -->
@@ -39,24 +40,32 @@
         <!-- First set of buttons in the second row -->
         <StackLayout Grid.Row="1" Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" Margin="310">
             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" Spacing="600" >
-                
-                <Button Text="LOGIN"  HorizontalOptions="FillAndExpand" 
-                        BackgroundColor="White" TextColor="Black" 
-                        BorderColor="Black" BorderWidth="1" 
-                        CornerRadius="50" HeightRequest="70"
-                        WidthRequest="250" FontSize="20"
-                        FontAttributes="Bold"
-                        Clicked="Button_Clicked"/>
 
-                <Button Text="REGISTER"
-                        HorizontalOptions="FillAndExpand"
-                        BackgroundColor="Orange" TextColor="White"
-                        BorderWidth="1" 
-                        CornerRadius="50" HeightRequest="70"
-                        WidthRequest="250" FontSize="20"
-                        FontAttributes="Bold"
-                        Clicked="RegisterClicked"/>
-                
+                <buttons:SfButton x:Name="SignInButton" 
+                 WidthRequest="250"                 HeightRequest="70"
+                Text="LOGIN"
+                TextColor="Black"
+                FontSize="25"
+                HorizontalOptions="Center"
+                ShowIcon="True" 
+                StrokeThickness="1"   
+                Stroke="Black"
+                Background="White"
+                HorizontalTextAlignment="Center"
+                CornerRadius="50"/>
+
+                <buttons:SfButton x:Name="SignUpButton" 
+                Text="REGISTER"
+                TextColor="White"
+                FontSize="25"
+                HeightRequest="50"
+                WidthRequest="250"
+                StrokeThickness="1"
+                Stroke="LightGray"
+                Background="Orange"
+                HorizontalTextAlignment="Center"
+                CornerRadius="50"/>
+
             </StackLayout>
 
 

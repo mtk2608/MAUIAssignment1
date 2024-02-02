@@ -40,12 +40,12 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\paycityicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+		<MauiIcon Include="Resources\AppIcon\paycityicon.svg" Color="#FFFFFF" />
+		
 		
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
-
+		<MauiSplashScreen Include ="Resources\Splash\paycityicon.svg" Color="#FFFFFF"/>
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
 		<MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />
@@ -63,6 +63,7 @@
 	  <None Remove="Resources\AppIcon\paycityicon.svg" />
 	  <None Remove="Resources\Images\billpayments.png" />
 	  <None Remove="Resources\Images\bookicon.png" />
+	  <None Remove="Resources\Images\construction.png" />
 	  <None Remove="Resources\Images\disc.png" />
 	  <None Remove="Resources\Images\fines.png" />
 	  <None Remove="Resources\Images\hamburger.png" />
@@ -74,8 +75,10 @@
 	  <None Remove="Resources\Images\prepaid.png" />
 	  <None Remove="Resources\Images\profile.png" />
 	  <None Remove="Resources\Images\search.png" />
+	  <None Remove="Resources\Images\searchmenu.png" />
 	  <None Remove="Resources\Images\services.png" />
 	  <None Remove="Resources\Images\tab.png" />
+	  <None Remove="Resources\Images\tab2.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -97,9 +100,6 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="HomePage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Controls\FlyoutHeader.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="ProfilePage.xaml">

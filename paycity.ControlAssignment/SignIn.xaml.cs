@@ -8,8 +8,8 @@ public partial class SignIn : ContentPage
 		InitializeComponent();
 	}
 
-	//public void NavigateToHomePage(object sender, EventArgs e)
-	//{
-		//Navigation.PushAsync(new HomePage());
-	//}
+    private void Button_Clicked(object sender, EventArgs e)
+    {
+		Navigation.PushAsync(new HomePage());
+    }
 }
